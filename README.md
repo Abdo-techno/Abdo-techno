@@ -81,9 +81,18 @@
     100% { color: #4caf50; }
   }
 
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  .tech-img {
+    transition: transform 0.3s ease-in-out;
+  }
+
   .tech-img:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
   }
 
   .card-img {
@@ -104,11 +113,5 @@
   .social-icon:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
-  }
-
-  @keyframes bounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
   }
 </style>
